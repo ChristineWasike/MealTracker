@@ -6,25 +6,21 @@ import { Meal } from './meal.model';
   template: `
   <div *ngIf = "childSelectedMeal">
   <h1>Edit Meal</h1>
-  <div>
-  <label > Enter Food Type:</label>
-  <input [(ngModel)]= "childSelectedMeal.type">
+  <div class="form-group">
+  <input placeholder=" Enter Food Type" [(ngModel)]= "childSelectedMeal.name">
   </div>
 
-  <div>
-  <label >Enter Description:</label>
-  <input [(ngModel)]= "childSelectedMeal.content">
+  <div class="form-group">
+  <input placeholder="Enter Description" [(ngModel)]= "childSelectedMeal.details">
   </div>
 
-  <div>
-  <label > Enter Calories:</label>
-  <input [(ngModel)]= "childSelectedMeal.price">
+  <div class="form-group">
+  <input type="number" placeholder="Enter Calories" [(ngModel)]= "childSelectedMeal.calories">
   <button class="btn btn-success" (click) ="doneClicked()">Done</button>
   </div>
 
   </div>
   `
-
 })
 
 export class EditMealComponent {
