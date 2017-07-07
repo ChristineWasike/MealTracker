@@ -1,24 +1,24 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import { Keg } from './keg.model';
+import { Meal } from './meal.model';
 
 @Component({
-  selector: 'edit-keg',
+  selector: 'edit-meal',
   template: `
-  <div *ngIf = "childSelectedKeg">
-  <h1>Edit Keg</h1>
+  <div *ngIf = "childSelectedMeal">
+  <h1>Edit Meal</h1>
   <div>
-  <label > Enter brew type:</label>
-  <input [(ngModel)]= "childSelectedKeg.type">
+  <label > Enter Food Type:</label>
+  <input [(ngModel)]= "childSelectedMeal.type">
   </div>
 
   <div>
-  <label >Enter alcohol content:</label>
-  <input [(ngModel)]= "childSelectedKeg.content">
+  <label >Enter Description:</label>
+  <input [(ngModel)]= "childSelectedMeal.content">
   </div>
 
   <div>
-  <label > Enter Price:</label>
-  <input [(ngModel)]= "childSelectedKeg.price">
+  <label > Enter Calories:</label>
+  <input [(ngModel)]= "childSelectedMeal.price">
   <button class="btn btn-success" (click) ="doneClicked()">Done</button>
   </div>
 
@@ -27,8 +27,8 @@ import { Keg } from './keg.model';
 
 })
 
-export class EditKegComponent {
-  @Input() childSelectedKeg: Keg;
+export class EditMealComponent {
+  @Input() childSelectedMeal: Meal;
   @Output() doneClickedSender = new EventEmitter();
   doneClicked() {
     this.doneClickedSender.emit();
