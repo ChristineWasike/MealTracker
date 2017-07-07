@@ -1,0 +1,29 @@
+{
+  "name": "jsip2",
+  "version": "1.0.0",
+  "description": "Christine Wasike",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristineWasike/MealTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristineWasike/MealTracker/issues"
+  },
+  "homepage": "https://github.com/ChristineWasike/MealTracker#readme",
+  "dependencies": {
+    "bower-files": "^4.0.0",
+    "bower-sync": "^0.1.1",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

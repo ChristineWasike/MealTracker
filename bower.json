@@ -1,0 +1,17 @@
+{
+  "name": "jsip2",
+  "description": "Christine Wasike",
+  "main": "gulpfile.js",
+  "authors": [
+    "Christine Wasike <christinewasike22@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ChristineWasike/MealTracker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
