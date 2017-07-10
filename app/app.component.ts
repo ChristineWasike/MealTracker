@@ -7,6 +7,7 @@ import { Meal } from './meal.model';
 <div class= "container">
 <div style="text-align:center; box-shadow: 5px 5px 2.5px #888888" >
 <h1>Your Meal Tracker</h1>
+<img src="../resources/img/food.png">
 <h2>Mindfulness, not calories, is the key.</h2>
 </div>
 <meals-list
@@ -28,7 +29,12 @@ import { Meal } from './meal.model';
 })
 
 export class AppComponent {
-  public masterMealList: Meal[] = [];
+  public masterMealList: Meal[] = [
+    new Meal("Waffle Fries","Delicious food right here",300),
+    new Meal("Buffalo Wings","Such a delicousy",600),
+    new Meal("Chicken Noughet","Eat it responsibly",500),
+
+  ];
   selectedMeal: Meal = null;
   showDetails(clickedMeal: Meal) {
     this.selectedMeal = clickedMeal;
