@@ -1,9 +1,9 @@
 #
 # Author's Name:
- Christine Wasike
+ Christine Wasike.
 
 # Project's Purpose:
-
+This projects enables the user to input a certain food they ate, together with the amount of calories it contains and a brief description of the food. This helps them keep track of the meals they ate that day.
 # Specs Sheet
 1.Log a food I have eaten by submitting a form with food name, calories and details.
 2.View a list of foods I have logged.
